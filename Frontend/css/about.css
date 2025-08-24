@@ -8,43 +8,48 @@
   body {
     background: #eaf2fb;
     color: #0a1a3a;
-    
+    padding-top: 5rem;
   }
   
- /* Navbar */
+/* Navbar */
 .navbar {
-    background: #0A2C59;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 30px 0 30px;   /* ⬅️ space sa taas at gilid */
-    padding: 15px 30px;
-    border-radius: 15px;     
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-  }
-  
-  .navbar img {
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .navbar .title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-right {
-    display: flex;
-    gap: 15px;
-    font-size: 20px;
-  }
+  position: fixed;            /* stays on top when scrolling */
+  top: 1rem;                  /* distance from top */
+  left: 50%;                  /* start at horizontal center */
+  transform: translateX(-50%);/* center it exactly */
+  width: 90%;                 /* navbar width (not full screen) */         /* optional max width */
+  background: #0A2C59;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  border-radius: 15px;        /* rounded corners */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* stronger shadow for floating effect */
+  z-index: 1000;
+}
+
+.navbar img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
   
 /* About Section */
 .about-card {

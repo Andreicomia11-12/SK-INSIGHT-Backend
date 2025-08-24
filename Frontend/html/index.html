@@ -21,7 +21,7 @@
       <div class="navbar-right">
         <span><i class="fa-solid fa-bars" style="color: #ffffff"></i></span>
         <span><i class="fa-solid fa-bell" style="color: #ffffff"></i></span>
-        <span><i class="fa-solid fa-user" style="color: #ffffff"></i></span>
+        <a href="../html/userProfile.html"><i class="fa-solid fa-user" style="color: #ffffff"></i></a>
       </div>
     </div>
 
@@ -51,17 +51,41 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-  <nav class="bg-blue-800 text-white px-6 py-4 flex items-center justify-between">
-    <!-- Logo -->
-    <div class="text-2xl font-bold">MyLogo</div>
-
-    <!-- Menu Links (Hidden on Mobile) -->
-    <div class="hidden md:flex space-x-6">
-      <a href="#" class="hover:text-blue-300">Home</a>
-      <a href="#" class="hover:text-blue-300">About</a>
-      <a href="#" class="hover:text-blue-300">Services</a>
-      <a href="#" class="hover:text-blue-300">Contact</a>
-    </div>  
+    <!-- ✅ Footer should be OUTSIDE the about card -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <h3>SK-INSIGHT</h3>
+          <p>Empowering the youth through data-driven governance.</p>
+        </div>
+    
+        <!-- Middle Section -->
+        <div class="footer-middle">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Things About US</a></li>
+            <li><a href="#">Things About SK</a></li>
+            <li><a href="#">Things About SK-INSIGHT</a></li>
+          </ul>
+        </div>
+    
+        <!-- Right Section -->
+        <div class="footer-right">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i> <a href="#">Facebook</a></li>
+            <li><i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a></li>
+            <li><i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <hr />
+    
+      <div class="footer-bottom">
+        <p>© 2025 SK-INSIGHT. All rights reserved.</p>
+      </div>
+    </footer>
 </body>
 </html>
